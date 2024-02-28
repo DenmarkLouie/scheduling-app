@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:id="@+id/cardviewLayout">
+
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="368dp"
+        android:layout_marginVertical="2dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Name :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Creotec"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client School :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clientSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Creotec Phil"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Number :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clientNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="(+63) 9123 456 789"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Type :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/prodType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="OJT"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scheduled Time :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/schedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="9:00"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom Link :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ZoomLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:autoLink="web"
+                android:ellipsize="end"
+                android:linksClickable="true"
+                android:maxLines="1"
+                android:hint="Empty"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/SchedStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Pending"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.creoteccalendarapplication">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/creocalndr_logo"
+        android:label="CreoCalendar"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Creoteccalendarapplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleDetails"
+            android:exported="false" />
+        <activity
+            android:name=".NewSchedule"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserDashboard"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

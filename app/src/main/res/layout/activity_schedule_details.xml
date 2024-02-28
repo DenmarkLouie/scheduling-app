@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleDetails"
+    android:background="@drawable/_3155">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/goHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@android:color/white"
+                android:text="Back" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="60dp"
+                app:srcCompat="@drawable/creocalndr_logo" />
+            <TextView
+                android:id="@+id/UserLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Designation"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Name :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/clientName"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gotoMain"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:drawableStart="@drawable/ic_person"
+                android:hint=" Client Name"
+                android:minHeight="48dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client School :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/clientSchool"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_school"
+                android:hint=" Client School"
+                android:minHeight="48dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Client Number :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/clientNumber"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableStart="@drawable/ic_school"
+                android:hint=" Client School"
+                android:minHeight="48dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Type :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ContactNum"
+                android:layout_marginTop="0dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/ProductType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Pending"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scheduled Time :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/SchedTIMETXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Pending"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zoom Link :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ZoomLink"
+                android:layout_width="261dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:autoLink="web"
+                android:ellipsize="end"
+                android:linksClickable="true"
+
+                android:hint="Link"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/schedStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Pending"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/SchedDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEW SCHEDULE DATE :"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/schedDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Date"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ConfirmReSched"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Confirm "
+                android:textSize="12sp"/>
+
+
+            <Button
+                android:id="@+id/ConfirmEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Confirm "
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/ConfirmZoomLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Confirm "
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/CancelButt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Cancel"
+                android:textSize="12sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ReSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Re-sched"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/editDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Edit"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/FinishMeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Finished"
+                android:textSize="12sp"/>
+
+            <Button
+                android:id="@+id/PostponeMeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Postpone"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/EnterZoomLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Add Zoom Link" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

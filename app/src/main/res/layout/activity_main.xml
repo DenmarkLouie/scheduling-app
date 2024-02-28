@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_3155"
+    tools:context=".MainActivity">
+
+
+
+    <Button
+        android:id="@+id/gotodashboard"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:text="User Dashboard" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="180dp"
+        app:srcCompat="@drawable/creocalndr_logo" />
+
+    <Button
+        android:id="@+id/addSchedule"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="238dp"
+        android:text="New Schedule" />
+
+
+    <CalendarView
+        android:id="@+id/Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="2dp"
+        android:background="#FDF" />
+
+    <Spinner
+        android:id="@+id/spinnerUser"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Calendar"
+        android:layout_marginTop="-2dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/SpinnerSearch"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginLeft="300dp"
+        android:layout_below="@id/Calendar"
+        android:layout_marginTop="0dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/spinnerUser"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp" />
+
+</RelativeLayout>
